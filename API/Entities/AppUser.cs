@@ -10,5 +10,7 @@ namespace API.Entities
         // Make sure to use "Id" as name for Entity Framework conventions
         public int Id { get; set; }
         public string UserName { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }
